@@ -1,0 +1,227 @@
+[Adblock Plus 2.0]
+! Title: Advanced CSS & Tracker Blocking Rules
+! Description: Advanced rules to block ad elements via CSS selectors and tracker domains
+! Homepage: https://github.com
+! Last Modified: 04 May 2026 06:59 UTC
+! Version: 1.0
+! Syntax: Adblock Plus 2.0 (uBlock Origin, Brave)
+!
+! ============================================================
+! CSS BAIT RULES - Bloque les éléments HTML avec ces classes
+! ============================================================
+!
+! Éléments de publicité génériques
+##.ad-banner
+##.adsbox
+##.advert
+##.sponsored-content
+##.adsbygoogle
+##.doubleclick-ad
+##.textAd
+
+! Variantes courantes
+##.ad-block
+##.ad-container
+##.ad-wrapper
+##.adblock
+##.ads-container
+##.advertisement
+##.advertising
+##.ad-space
+##.ad-unit
+##.ad-widget
+##.ad-placeholder
+
+! Avec tirets et underscores
+##.ad-banner-top
+##.ad-banner-bottom
+##.ad-banner-side
+##.ads_block
+##.ads_wrapper
+##.ad_banner
+##.ad_box
+##.advert-box
+##.advert-banner
+##.advert-space
+
+! Éléments d'annonces sponsorisées
+##.sponsored
+##.sponsored-ad
+##.sponsored-item
+##.sponsor-ad
+##.sponsored-block
+##.sponsor-content
+##.branded-content
+
+! Formats mobiles & responsive
+##.mobile-ads
+##.mobile-ad
+##.mobile-advert
+##.sidebar-ads
+##.side-ads
+##.top-ads
+##.bottom-ads
+
+! Éléments de contenu tiers/externe
+##.external-ad
+##.third-party-ad
+##.iframe-ad
+##.inline-ad
+##.native-ad
+##.native-advertisement
+
+! ============================================================
+! DOMAIN BLOCKING RULES - Bloque les domaines
+! ============================================================
+!
+! Google AdSense
+||googleadservices.com^
+||google-adsense.com^
+||pagead.googlesyndication.com^
+||pagead2.googlesyndication.com^
+||adsbygoogle.js^
+
+! DoubleClick (Google)
+||doubleclick.net^
+||*.doubleclick.net^
+||pagead.l.doubleclick.net^
+||ad.doubleclick.net^
+||ad1.doubleclick.net^
+||ad2.doubleclick.net^
+||adclick.g.doubleclick.net^
+||cm.g.doubleclick.net^
+||googleads.g.doubleclick.net^
+||pubads.g.doubleclick.net^
+||securepubads.g.doubleclick.net^
+||stats.g.doubleclick.net^
+||static.doubleclick.net^
+||m.doubleclick.net^
+||mediavisor.doubleclick.net^
+
+! Outbrain
+||outbrain.com^
+||*.outbrain.com^
+||*.outbrain.org^
+||*.outbrainimg.com^
+||*.amplifypixel.outbrain.com^
+||*.visualrevenue.com^
+||outbrain.js^
+
+! ============================================================
+! TRACKER BLOCKING RULES
+! ============================================================
+!
+! Google Analytics - Tous les domaines
+||google-analytics.com^
+||*.google-analytics.com^
+||www.google-analytics.com^
+||www.google-analytics.com/analytics.js^
+||www.google-analytics.com/ga.js^
+||www.google-analytics.com/collect^
+
+! Google Analytics 4 (GA4)
+||googletagmanager.com^
+||*.googletagmanager.com^
+||gtag.js^
+||gtm.js^
+||analytics.google.com^
+||*.analytics.google.com^
+||app-measurement.com^
+||*.app-measurement.com^
+||firebaseremoteconfig.googleapis.com^
+||firebaselogging-pa.googleapis.com^
+
+! FingerprintJS
+||fingerprintjs.com^
+||*.fingerprintjs.com^
+||cdn.jsdelivr.net/npm/@fingerprintjs^
+||openfpcdn.io^
+||*.openfpcdn.io^
+||fingerprint.com^
+||*.fingerprint.com^
+
+! ============================================================
+! BLOCKING FILTERS - Bloque les scripts spécifiques
+! ============================================================
+!
+! Scripts Google Analytics
+||google-analytics.com/analytics.js
+||google-analytics.com/ga.js
+||google-analytics.com/collect
+||googletagmanager.com/gtag/js
+||googletagmanager.com/gtm.js
+
+! Scripts DoubleClick & GoogleAds
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+||securepubads.g.doubleclick.net/tag/js/gpt.js
+||googleadservices.com^
+
+! Scripts FingerprintJS
+||cdn.jsdelivr.net/npm/@fingerprintjs/fingerprintjs@
+||fingerprintjs.com^/dist/
+||openfpcdn.io^/fp.min.js
+
+! ============================================================
+! ADDITIONAL CSS SELECTORS - Variantes additionnelles
+! ============================================================
+!
+! Variantes avec ID
+##ad
+##ads
+##advertisement
+##advert
+##ad-space
+##ad-unit
+##ad-wrapper
+##ad-container
+
+! Variantes spécifiques
+##.GoogleAdSense
+##.DoubleClick
+##.Outbrain
+##[class*="ad-"]
+##[class*="ads-"]
+##[class*="adv-"]
+##[class*="sponsored-"]
+
+! ============================================================
+! COSMETIC FILTERS - Masque les éléments restants
+! ============================================================
+!
+! Masquer les conteneurs publicitaires vides
+##.adsbygoogle:not([style*="display"])
+##.ad-banner:empty
+##.ad-space:empty
+##[data-ad-slot]:empty
+
+! Masquer les iframes publicitaires
+##iframe[src*="doubleclick"]
+##iframe[src*="adsense"]
+##iframe[src*="googlesyndication"]
+##iframe[src*="outbrain"]
+##iframe[src*="fingerprintjs"]
+
+! ============================================================
+! STATIC BLOCKING - Règles statiques importantes
+! ============================================================
+!
+! Bloquer les requêtes analytics.js
+/analytics.js^
+
+! Bloquer les requêtes GA4
+/gtag.js^
+/gtm.js^
+
+! Bloquer les scripts de tracking
+/tracking.js^
+/tracker.js^
+/analytics^
+
+! ============================================================
+! EXCEPTION RULES - Whitelist si besoin
+! ============================================================
+!
+! Décommenter si nécessaire (sites qui cassent)
+! @@||localhost^
+! @@||127.0.0.1^
+

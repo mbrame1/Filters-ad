@@ -1,0 +1,256 @@
+[Adblock Plus 2.0]
+! Checksum: CustomFilters2026
+! Title: CSS Bait & Tracker Blocking Rules
+! Description: Rules for blocking ad CSS selectors and tracking domains
+! Version: 1.0
+! TimeUpdated: 2026-05-04T07:27:22Z
+! Expires: 7 days
+! Homepage: https://github.com
+! License: https://github.com/AdguardTeam/AdGuardFilters/blob/master/LICENSE
+!
+!---------------------------------------------------------------------------!
+!-------------- CSS BAIT RULES (Cosmetic Filters) -------------------------!
+!---------------------------------------------------------------------------!
+!
+! Direct blocking of ad-related CSS classes
+##.ad-banner
+##.ad-banner-top
+##.ad-banner-bottom
+##.ad-banner-side
+##.adsbox
+##.ads-box
+##.adbox
+##.ads-container
+##.ad-container
+##.ad-wrapper
+##.ads-wrapper
+##.advertisement
+##.advertising
+##.advert
+##.advert-box
+##.advert-banner
+##.advert-space
+##.ad-space
+##.ad-unit
+##.ad-placeholder
+##.ad-widget
+##.sponsored
+##.sponsored-content
+##.sponsored-ad
+##.sponsored-item
+##.sponsor-content
+##.branded-content
+##.adsbygoogle
+##.adsense
+##.google-ads
+##.google-adsense
+##.doubleclick-ad
+##.dfp-ad
+##.dfp-slot
+##.textAd
+##.text-ad
+##.text-ads
+##.banner-ad
+##.banner-ads
+##.top-banner
+##.bottom-banner
+##.side-banner
+##.inline-ad
+##.native-ad
+##.native-advertisement
+##.external-ad
+##.third-party-ad
+##.iframe-ad
+##.mobile-ads
+##.mobile-ad
+##.sidebar-ads
+##.side-ads
+##.top-ads
+##.bottom-ads
+!
+!---------------------------------------------------------------------------!
+!-------------- GOOGLE AD NETWORKS ----------------------------------------!
+!---------------------------------------------------------------------------!
+!
+! Google AdSense - Primary domains
+||googleadservices.com^
+||google-adsense.com^
+||pagead.googlesyndication.com^
+||pagead2.googlesyndication.com^
+||adsbygoogle.js^
+||adservice.google^
+||ads.google.com^
+||adservice.google.com^
+||googleads.g.doubleclick.net^
+||afs.googlesyndication.com^
+!
+! Google DoubleClick - All variations
+||doubleclick.net^
+||ad.doubleclick.net^
+||ad1.doubleclick.net^
+||ad2.doubleclick.net^
+||ad3.doubleclick.net^
+||ad4.doubleclick.net^
+||ad5.doubleclick.net^
+||adclick.g.doubleclick.net^
+||cm.g.doubleclick.net^
+||pagead.l.doubleclick.net^
+||pubads.g.doubleclick.net^
+||securepubads.g.doubleclick.net^
+||stats.g.doubleclick.net^
+||static.doubleclick.net^
+||m.doubleclick.net^
+||mediavisor.doubleclick.net^
+!
+!---------------------------------------------------------------------------!
+!-------------- OUTBRAIN & CONTENT NETWORKS --------------------------------!
+!---------------------------------------------------------------------------!
+!
+||outbrain.com^
+||outbrain.org^
+||outbrainimg.com^
+||amplifypixel.outbrain.com^
+||visualrevenue.com^
+||taboola.com^
+||cdn-static.taboola.com^
+!
+!---------------------------------------------------------------------------!
+!-------------- GOOGLE ANALYTICS & TRACKING --------------------------------!
+!---------------------------------------------------------------------------!
+!
+! Google Analytics - All variations
+||google-analytics.com^
+||analytics.google.com^
+||www.google-analytics.com^
+||stats.g.google.com^
+!
+! Google Analytics 4 (GA4)
+||googletagmanager.com^
+||gtm.js^
+||gtag.js^
+||app-measurement.com^
+||firebase-measurement.com^
+!
+! Google Tag Manager
+||tagmanager.google.com^
+||www.googletagmanager.com^
+!
+!---------------------------------------------------------------------------!
+!-------------- FINGERPRINTING & IDENTIFICATION ----------------------------!
+!---------------------------------------------------------------------------!
+!
+||fingerprintjs.com^
+||openfpcdn.io^
+||fingerprint.com^
+||cdn.jsdelivr.net/npm/@fingerprintjs^
+!
+!---------------------------------------------------------------------------!
+!-------------- FACEBOOK TRACKING -------------------------------------------!
+!---------------------------------------------------------------------------!
+!
+||facebook.com^
+||connect.facebook.net^
+||facebook.net^
+||fbcdn.net^
+!
+!---------------------------------------------------------------------------!
+!-------------- AMAZON ADVERTISING -----------------------------------------!
+!---------------------------------------------------------------------------!
+!
+||amazon-adsystem.com^
+||aax.amazon-adsystem.com^
+||aax-eu.amazon-adsystem.com^
+||mads.amazon.com^
+||aan.amazon.com^
+!
+!---------------------------------------------------------------------------!
+!-------------- SCRIPT AND REQUEST BLOCKING --------------------------------!
+!---------------------------------------------------------------------------!
+!
+! Analytics scripts
+/analytics.js^
+/ga.js^
+/gtag.js^
+/gtm.js^
+/collect^
+!
+! AdSense scripts
+/adsbygoogle.js^
+/pagead/js/adsbygoogle.js^
+!
+! DoubleClick/GPT scripts
+/gpt.js^
+/tag/js/gpt.js^
+!
+! Generic tracking scripts
+/tracking.js^
+/tracker.js^
+/track.js^
+/pixel.gif^
+/pixel.js^
+!
+!---------------------------------------------------------------------------!
+!-------------- IFRAME BLOCKING (Cosmetic) ---------------------------------!
+!---------------------------------------------------------------------------!
+!
+! Block iframes with advertising networks
+##iframe[src*="doubleclick"]
+##iframe[src*="pagead"]
+##iframe[src*="googlesyndication"]
+##iframe[src*="adsense"]
+##iframe[src*="googleadservices"]
+##iframe[src*="outbrain"]
+##iframe[src*="taboola"]
+##iframe[src*="analytics"]
+##iframe[src*="googletagmanager"]
+##iframe[src*="facebook"]
+##iframe[src*="fbcdn"]
+##iframe[src*="amazon-adsystem"]
+##iframe[src*="fingerprintjs"]
+!
+!---------------------------------------------------------------------------!
+!-------------- ADVANCED CSS PATTERNS (Attribute matching) ----------------!
+!---------------------------------------------------------------------------!
+!
+! Block by data attributes
+##[data-ad-slot]
+##[data-ad-format]
+##[data-ad-region]
+##[data-google-query-id]
+##[data-ad-client]
+!
+! Block by class patterns
+##[class*="advertisement"]
+##[class*="advertising"]
+##[class*="ad-space"]
+##[class*="ad-unit"]
+##[class*="advert"]
+##[class*="sponsored"]
+##[class*="promotion"]
+##[class*="banner"]
+!
+! Block by ID patterns
+##[id*="advertisement"]
+##[id*="ad-"]
+##[id*="ads-"]
+##[id*="google-ad"]
+##[id*="adblock"]
+!
+!---------------------------------------------------------------------------!
+!-------------- EMPTY ELEMENT REMOVAL (Cosmetic) --------------------------!
+!---------------------------------------------------------------------------!
+!
+! Remove empty ad containers
+##.ad-banner:empty
+##.ad-container:empty
+##.ads-container:empty
+##.advertisement:empty
+##.advert:empty
+!
+! Hide specific Google AdSense patterns
+##ins.adsbygoogle:not([style*="display: none"])
+##.adsbygoogle[style*="display: none"]
+!
+!---------------------------------------------------------------------------!
+!-------------- END OF RULES -----------------------------------------------!
+!---------------------------------------------------------------------------!

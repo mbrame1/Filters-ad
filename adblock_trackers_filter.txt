@@ -1,0 +1,70 @@
+[Adblock Plus 2.0]
+! Title: Trackers & Analytics Blocker
+! Description: Bloque les traceurs Google, Segment, HubSpot et autres scripts d'analyse
+! Updated: 2026-05-15
+! Format: AdBlock/AdGuard Home compatible
+
+! ============================================
+! GOOGLE DOUBLE CLICK / GOOGLE ADS
+! ============================================
+||securepubads.g.doubleclick.net/tag/js/gpt.js$script
+||doubleclick.net^$third-party
+
+! ============================================
+! GOOGLE ANALYTICS
+! ============================================
+||www.google-analytics.com/analytics.js$script
+||google-analytics.com^$third-party
+||analytics.google.com^$third-party
+||ssl.google-analytics.com^
+
+! ============================================
+! SEGMENT ANALYTICS
+! ============================================
+||cdn.segment.com/analytics.js^$script
+||cdn.segment.com/analytics.js/v1^$script
+||segment.com^$third-party
+
+! ============================================
+! HUBSPOT
+! ============================================
+||js.hs-scripts.com^$script
+||js.hsadspixel.net^$script
+||hubspotusercontent.com^$script
+||hs-scripts.com^$third-party
+
+! ============================================
+! GOOGLE TAG MANAGER / GTAG
+! ============================================
+||www.googletagmanager.com/gtag/js^$script
+||googletagmanager.com^$third-party
+||googletagmanager.com/gtag/js*G-*$script
+||google-analytics.com/gtag^
+
+! ============================================
+! VARIANTES COMMUNES
+! ============================================
+! Variantes avec chemins différents
+||securepubads.g.doubleclick.net^
+||cdn.segment.com^
+||js.hs-scripts.com^
+||googletagmanager.com^
+
+! ============================================
+! REGEX AVANCÉE (AdGuard Home)
+! ============================================
+! Bloque les URLs avec paramètres ID Google
+/gtag\/js\?id=G-.*/$script
+
+! Bloque tous les domaines de tracking Google
+|gstatic.com|$third-party
+
+! ============================================
+! ALTERNATIVE : Format simplifié (Hosts-like)
+! ============================================
+! Pour AdGuard Home (DNS blocking):
+! 0.0.0.0 securepubads.g.doubleclick.net
+! 0.0.0.0 www.google-analytics.com
+! 0.0.0.0 cdn.segment.com
+! 0.0.0.0 js.hs-scripts.com
+! 0.0.0.0 www.googletagmanager.com

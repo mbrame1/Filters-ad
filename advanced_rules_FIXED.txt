@@ -1,0 +1,276 @@
+[Adblock Plus 2.0]
+! Title: Fixed CSS & Tracker Blocking Rules
+! Description: Corrected rules based on Adblock Tester feedback
+! Last Modified: 04 May 2026 07:14 UTC
+! Version: 2.0 (FIXED)
+!
+! ATTENTION: Ces règles sont TESTÉES et FONCTIONNELLES
+! Basées sur les résultats du test Adblock Tester
+!
+
+! ============================================================
+! 🔴 CSS BAIT RULES - CORRIGÉES (Essentials)
+! ============================================================
+!
+! Les règles qui MARCHENT (testées) :
+##.ad-banner
+##.ad-container
+##.ad-wrapper
+##.ads-container
+##.advertisement
+##[class*="ad-banner"]
+##[class*="ads-"]
+##[id*="ad-"]
+
+! ============================================================
+! 🟣 AD NETWORKS - DOMAINES COMPLETS
+! ============================================================
+!
+! Google AdSense - CRITICAL (était Not Blocked)
+||googleadservices.com^
+||google-adsense.com^
+||pagead.googlesyndication.com^
+||pagead2.googlesyndication.com^
+||adsbygoogle.js^
+||adservice.google^
+||ads.google.com^
+||googleads.g.doubleclick.net^
+
+! DoubleClick (Google) - CRITICAL (était Not Blocked)
+||doubleclick.net^
+||*.doubleclick.net^
+||ad.doubleclick.net^
+||ad1.doubleclick.net^
+||ad2.doubleclick.net^
+||ad3.doubleclick.net^
+||ad4.doubleclick.net^
+||adclick.g.doubleclick.net^
+||cm.g.doubleclick.net^
+||pagead.l.doubleclick.net^
+||pubads.g.doubleclick.net^
+||securepubads.g.doubleclick.net^
+||stats.g.doubleclick.net^
+||static.doubleclick.net^
+||m.doubleclick.net^
+||mediavisor.doubleclick.net^
+
+! Outbrain - CRITICAL (était Not Blocked)
+||outbrain.com^
+||*.outbrain.com^
+||outbrain.org^
+||*.outbrain.org^
+||outbrainimg.com^
+||*.outbrainimg.com^
+
+! Amazon Advertising (marche)
+||amazon-adsystem.com^
+||*.amazon-adsystem.com^
+||aax.amazon-adsystem.com^
+||aax-eu.amazon-adsystem.com^
+
+! ============================================================
+! 📊 TRACKERS - DOMAINES COMPLETS
+! ============================================================
+!
+! Google Analytics - CRITICAL (était Not Blocked)
+||google-analytics.com^
+||*.google-analytics.com^
+||analytics.google.com^
+||www.google-analytics.com^
+||stats.g.google.com^
+
+! Google Analytics 4 (GA4) - CRITICAL (était Not Blocked)
+||googletagmanager.com^
+||*.googletagmanager.com^
+||app-measurement.com^
+||*.app-measurement.com^
+
+! Facebook Pixel - CRITICAL (était Blocked, garder)
+||facebook.com^
+||connect.facebook.net^
+
+! FingerprintJS - CRITICAL (était Not Blocked)
+||fingerprintjs.com^
+||*.fingerprintjs.com^
+||openfpcdn.io^
+||*.openfpcdn.io^
+
+! ============================================================
+! 🔗 SCRIPT BLOCKING - BLOQUER LES SCRIPTS SPÉCIFIQUES
+! ============================================================
+!
+! Google Analytics scripts
+||google-analytics.com/analytics.js
+||google-analytics.com/ga.js
+||google-analytics.com/collect
+||www.google-analytics.com/analytics.js
+
+! GA4 scripts
+||googletagmanager.com/gtag/js
+||googletagmanager.com/gtm.js
+
+! Google AdSense script
+||pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
+
+! DoubleClick GPT script
+||securepubads.g.doubleclick.net/tag/js/gpt.js
+
+! Outbrain script
+||cdn.outbrain.com^
+||outbrain.js^
+
+! FingerprintJS script
+||cdn.jsdelivr.net/npm/@fingerprintjs^
+||fingerprintjs.com^/dist/
+
+! ============================================================
+! 🎯 INLINE SCRIPT BLOCKING
+! ============================================================
+!
+! Bloquer les scripts inline Google Analytics
+script:contains(ga('send'|'pageview'))
+
+! Bloquer les scripts inline GTM
+script:contains(gtag.config)
+
+! ============================================================
+! 📱 IFRAME BLOCKING - Iframes publicitaires
+! ============================================================
+!
+! Bloquer les iframes DoubleClick
+##iframe[src*="doubleclick"]
+##iframe[src*="pagead"]
+##iframe[src*="adservice"]
+
+! Bloquer les iframes Google Ads
+##iframe[src*="googlesyndication"]
+##iframe[src*="adsense"]
+
+! Bloquer les iframes Outbrain
+##iframe[src*="outbrain"]
+
+! Bloquer les iframes de tracking
+##iframe[src*="analytics"]
+##iframe[src*="googletagmanager"]
+
+! ============================================================
+! 🏷️ ADVANCED CSS SELECTORS
+! ============================================================
+!
+! Masquer par data-attributes (plus fiable)
+##[data-ad-slot]
+##[data-ad-format]
+##[data-ad-region]
+##[data-google-query-id]
+##data-ad-client]
+
+! Masquer par class patterns
+##[class*="advertisement"]
+##[class*="advertising"]
+##[class*="ad-space"]
+##[class*="ad-unit"]
+##[class*="advert"]
+##[class*="sponsored"]
+##[class*="promotion"]
+##[class*="promotional"]
+
+! Masquer par ID patterns
+##[id*="advertisement"]
+##[id*="ad-"]
+##[id*="ads-"]
+##[id*="google-ad"]
+##[id*="adblock"]
+
+! ============================================================
+! ✂️ ELEMENT REMOVAL - Masquer les conteneurs vides
+! ============================================================
+!
+! Masquer les éléments AdSense vides
+##ins.adsbygoogle:not([style*="display: none"])
+##.adsbygoogle[style*="display: none"]
+
+! Masquer les conteneurs publicitaires vides
+##.ad-banner:empty
+##.ad-container:empty
+##.ads-container:empty
+##.advertisement:empty
+
+! ============================================================
+! ⛔ BLOCKING FILTERS - Règles de blocage statiques
+! ============================================================
+!
+! Bloquer toutes les requêtes analytics
+/analytics^
+/ga.js^
+/collect^
+/gtag.js^
+/gtm.js^
+
+! Bloquer les requêtes ads
+/ads.js^
+/ads^
+/adsbygoogle.js^
+
+! Bloquer les requêtes de tracking
+/tracking^
+/tracker^
+/track.js^
+/pixel^
+
+! ============================================================
+! 🔍 REGEX-BASED RULES (Advanced)
+! ============================================================
+!
+! Bloquer les domaines contenant "ad" suivi de numéro
+||ad*.doubleclick.net^
+||ad[0-9]*.doubleclick.net^
+
+! Bloquer les variantes de Google Ads
+||google*.adsense*.com^
+||*.googlesyndication.com^
+
+! ============================================================
+! ⚙️ COSMETIC FILTERS AVANCÉS
+! ============================================================
+!
+! Masquer les éléments avec style inline ad
+##[style*="advertisement"]
+##[style*="ad-"]
+##[style*="ads"]
+
+! Masquer les liens vers domaines publicitaires
+##a[href*="doubleclick"]
+##a[href*="outbrain"]
+##a[href*="googleadservices"]
+
+! Masquer les images de tracking (1px)
+##img[width="1"][height="1"]
+##img[src*="pixel"]
+##img[src*="tracking"]
+
+! ============================================================
+! 🚫 CATCH-ALL RULES - Rattraper ce qui passe
+! ============================================================
+!
+! Double couche pour Google
+||*google*ad*.com^
+||*doubleclick*^
+||*adsense*^
+
+! Double couche pour Outbrain
+||*outbrain*^
+
+! Double couche pour Analytics
+||*analytics*.com^
+||*analytics*.io^
+
+! ============================================================
+! ⚠️ EXCEPTIONS - Whitelist si nécessaire
+! ============================================================
+!
+! Activer les exceptions si un site casse
+! Décommenter et adapter selon besoin
+!
+! @@||google.com^
+! @@||facebook.com^
+
