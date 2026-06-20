@@ -1,0 +1,320 @@
+! ============================================================================
+! LISTE DE BLOCAGE PERSONNALISÉE (uBlock Origin / AdGuard)
+! ============================================================================
+
+! Amazon Ads
+||aax.amazon-adsystem.com^
+! DoubleClick (Google)
+||ad.doubleclick.net^
+||pubads.g.doubleclick.net^
+||securepubads.g.doubleclick.net^
+! Media.net
+||media.net^
+||static.media.net^
+||contextual.media.net^
+! Google Ads
+||pagead2.googlesyndication.com^
+||adservice.google.com^
+||googleadservices.com^
+||tpc.googlesyndication.com^
+! Criteo
+||static.criteo.net^
+||bidder.criteo.com^
+! Taboola
+||taboola.com^
+||cdn.taboola.com^
+||trc.taboola.com^
+||images.taboola.com^
+||nr.taboola.com^
+||api.taboola.com^
+! Outbrain
+||outbrain.com^
+||log.outbrain.com^
+||widgets.outbrain.com^
+||odb.outbrain.com^
+! MGID
+||mgid.com^
+||cdn.mgid.com^
+||servicer.mgid.com^
+! Bing Ads (Microsoft)
+||bat.bing.com^
+||bingads.microsoft.com^
+||ads.microsoft.com^
+||adnxs.com^
+! AppLovin
+||applovin.com^
+||d.applovin.com^
+||rt.applovin.com^
+||ms.applovin.com^
+! Xandr (Microsoft)
+||ib.adnxs.com^
+||secure.adnxs.com^
+||acdn.adnxs.comn^
+||prebid.adnxs.com^
+! PubMatic
+||pubmatic.com^
+||ads.pubmatic.com^
+||image6.pubmatic.com^
+||hbopenbid.pubmatic.com^
+! OpenX
+||openx.net^
+||us-ads.openx.net^
+||rtb.openx.net^
+||u.openx.net^
+! Magnite (Rubicon / SpotX)
+||rubiconproject.com^
+||pixel.rubiconproject.com^
+||fastlane.rubiconproject.com^
+! Index Exchange (Casale Media)
+||casalemedia.com^
+||as.casalemedia.com^
+||htlb.casalemedia.com^
+! Yahoo / Oath
+||ads.yahoo.com^
+||gemini.yahoo.com^
+! Yandex
+||metrika.yandex.ru^
+||adfox.yandex.ru^
+||adfstat.yandex.ru^
+||appmetrica.yandex.ru^
+||extmaps-api.yandex.net^
+||offerwall.yandex.net^
+||mc.yandex.ru^
+! Réseaux publicitaires mobiles
+||inmobi.com^
+||is.com^
+! Échanges publicitaires et SSP
+||adsrvr.org^
+||smartyads.com^
+||ad.gt^
+||contextweb.com^
+||sharethrough.com^
+||eb2.3lift.com^
+||tlx.3lift.com^
+||apex.go.sonobi.com^
+||c.gumgum.com^
+||a.teads.tv^
+||cdn.teads.tv^
+||cdn.kargo.com^
+||sync.kargo.com^
+! AdRoll / NextRoll
+||d.adroll.com^
+||s.adroll.com^
+||adroll.com^
+! Pangle (ByteDance)
+||pangleglobal.com^
+! Vérification publicitaire
+||doubleverify.com^
+||cdn.doubleverify.com^
+||pixel.adsafeprotected.com^
+||static.adsafeprotected.com^
+||fw.adsafeprotected.com^
+||insightexpressai.com^
+
+! === ANALYTIQUE ===
+! Google Analytics
+||analytics.google.com^
+||google-analytics.com^
+||ssl.google-analytics.com^
+||www.google-analytics.com^
+! Google Tag Manager
+||tagmanager.google.com^
+! Adobe Analytics (Omniture)
+||analytics.adobe.io^
+! Microsoft Clarity
+||clarity.ms^
+||c.clarity.ms^
+||s.clarity.ms^
+! Hotjar
+||static.hotjar.com^
+||script.hotjar.com^
+||vars.hotjar.com^
+||in.hotjar.com^
+! Heap Analytics
+||heapanalytics.com^
+||cdn.heapanalytics.com^
+! Mixpanel
+||api.mixpanel.com^
+||api-js.mixpanel.com^
+||decide.mixpanel.com^
+! Amplitude
+||api.amplitude.com^
+||api2.amplitude.com^
+! FullStory
+||rs.fullstory.com^
+! Quantcast
+||quantserve.com^
+||pixel.quantserve.com^
+||quantcast.com^
+! comScore / Scorecard
+||scorecardresearch.com^
+||sb.scorecardresearch.com^
+||b.scorecardresearch.com^
+
+! === SUIVI ET EMPREINTE DIGITALE ===
+! Empreinte digitale du navigateur
+||fpjs.io^
+||api.fpjs.io^
+! Analytique comportementale
+||siftscience.com^
+||cdn.siftscience.com^
+||permutive.com^
+||cdn.permutive.com^
+! Résolution d'identité
+||bluekai.com^
+||onetag-sys.com^
+||pippio.com^
+||id5-sync.com^
+||sync.mathtag.com^
+||pixel.mathtag.com^
+||crwdcntrl.net^
+||tapad.com^
+! LiveRamp
+||idsync.rlcdn.com^
+||api.rlcdn.com^
+! Attribution mobile
+||app.appsflyer.com^
+||appsflyer.com^
+||app.adjust.com^
+||adjust.com^
+||api2.branch.io^
+||singular.net^
+
+! === TRACEURS D'ERREURS ===
+! New Relic
+||bam.nr-data.net^
+
+! === CRYPTOMINEURS ET MALWARES ===
+! Cryptomineurs de navigateur
+||mineralt.io^
+! Malvertising / Pop-ups
+||clickadu.com^
+||trafficjunky.net^
+||exoclick.com^
+||juicyads.com^
+
+! === TRACEURS SOCIAUX ===
+! Facebook / Meta
+||pixel.facebook.com^
+||an.facebook.com^
+||connect.facebook.net^
+||graph.facebook.com^
+||tr.facebook.com^
+! Instagram
+||graph.instagram.com^
+||i.instagram.com^
+! Snapchat
+||sc-static.net^
+||tr.snapchat.com^
+||ads.snapchat.com^
+! LinkedIn
+||ads.linkedin.com^
+||analytics.pointdrive.linkedin.com^
+||snap.licdn.com^
+||px.ads.linkedin.com^
+! X (Twitter)
+||ads-api.twitter.com^
+||ads-api.x.com^
+||analytics.twitter.com^
+||ads.x.com^
+! Reddit
+||events.reddit.com^
+||d.reddit.com^
+! TikTok
+||ads-api.tiktok.com^
+||analytics.tiktok.com^
+||ads-sg.tiktok.com^
+||analytics-sg.tiktok.com^
+||business-api.tiktok.com^
+||ads.tiktok.com^
+! Pinterest
+||ct.pinterest.com^
+||log.pinterest.com^
+||trk.pinterest.com^
+! Quora
+||pixel.quora.com^
+! VK (VKontakte)
+||ads.vk.com^
+! Mail.ru
+||ad.mail.ru^
+||top-fwz1.mail.ru^
+
+! === FOURNISSEURS OEM ===
+! Huawei
+||metrics.data.hicloud.com^
+||metrics2.data.hicloud.com^
+||grs.hicloud.com^
+||logservice.hicloud.com^
+||logservice1.hicloud.com^
+||logbak.hicloud.com^
+! Xiaomi
+||data.mistat.india.xiaomi.com^
+||data.mistat.rus.xiaomi.com^
+||tracking.rus.miui.com^
+! Samsung
+||smetrics.samsung.com^
+||nmetrics.samsung.com^
+! Vivo
+||adlog.vivo.com^
+||ads-api.vivo.com^
+! Lenovo
+||a.lenovo.com^
+! LG
+||us.ibs.lgappstv.com^
+||smartclip.net^
+||smartclip.com^
+! Microsoft (Surface / Windows)
+||settings-win.data.microsoft.com^
+||vortex.data.microsoft.com^
+||vortex-win.data.microsoft.com^
+||watson.telemetry.microsoft.com^
+||telemetry.microsoft.com^
+! Smart TV (Roku, Vizio)
+||ads.vizio.com^
+||tvinteractive.tv^
+||tvpixel.com^
+! Google (Pixel / Android)
+||pagead.l.doubleclick.net^
+
+! === GESTION DU CONSENTEMENT ===
+! Plateformes de gestion du consentement
+||cookiebot.com^
+
+! === RÉSEAUX D'AFFILIATION ===
+! ShareASale
+||shareasale.com^
+! Rakuten Advertising
+||click.linksynergy.com^
+||ad.linksynergy.com^
+||track.linksynergy.com^
+! Impact
+||impact.com^
+||api.impact.com^
+! Awin
+||www.awin1.com^
+! Amazon Associates
+||ir-na.amazon-adsystem.com^
+||rcm-na.amazon-adsystem.com^
+||ws-na.amazon-adsystem.com^
+
+! === TESTS A/B ===
+! Plateformes de tests A/B
+||logx.optimizely.com^
+||api.optimizely.com^
+||cdn.dynamicyield.com^
+
+! === SUIVI DES E-MAILS ===
+! Marketing par e-mail
+||list-manage.com^
+||track.hubspot.com^
+
+! === PUBLICITÉS VIDÉO ===
+! Connatix
+||cd.connatix.com^
+||capi.connatix.com^
+||vid.connatix.com^
+! Innovid
+||s.innovid.com^
+! Serveurs de publicités vidéo
+||tremorhub.com^
+||ads.tremorhub.com^
