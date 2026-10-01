@@ -1,0 +1,872 @@
+! Titre : AdErasr Test Domains — AdGuard Home
+! Source : AdErasr Ad Blocker Stress Test — Rapport complet (2 oct. 2026, 760 tests, 28 niveaux)
+! Format : syntaxe AdGuard Home (||domaine^)
+! Remarque : les niveaux 14, 19, 20, 21, 23, 24, 27 et 28 sont des tests
+! DOM/cosmétiques (CSS, MutationObserver, overlays) : non blocables au niveau DNS.
+! Seuls les niveaux chargeant de vrais domaines sont listés ci-dessous.
+!
+! ===== Niveau 1 : First Contact (Google Ads) =====
+||doubleclick.net^
+||googleadservices.com^
+||googlesyndication.com^
+||googletagservices.com^
+||googleads.g.doubleclick.net^
+||adservice.google.com^
+||pagead2.googlesyndication.com^
+||fundingchoicesmessages.com^
+||google-analytics.com^
+||googletagmanager.com^
+||adsense.com^
+||admanager.google.com^
+!
+! ===== Niveau 2 : Ad Network Gauntlet =====
+||adnxs.com^
+||adnxs-simple.com^
+||amazon-adsystem.com^
+||aax.amazon-adsystem.com^
+||openx.net^
+||pubmatic.com^
+||criteo.com^
+||criteo.net^
+||indexexchange.com^
+||indexww.com^
+||rubiconproject.com^
+||sovrn.com^
+||3lift.com^
+||sharethrough.com^
+||adsrvr.org^
+||gumgum.com^
+||teads.tv^
+||yieldmo.com^
+||prebid.org^
+||mediavine.com^
+||ezoic.com^
+||ezodn.com^
+||arabyads.com^
+||mintegral.com^
+||rtbhouse.com^
+||sonobi.com^
+||kargo.com^
+||undertone.com^
+||infolinks.com^
+||choozle.com^
+||bidswitch.net^
+||carbonads.com^
+||buysellads.com^
+||raptive.com^
+||freestar.com^
+||analytics.tiktok.com^
+||ads.tiktok.com^
+||alb.reddit.com^
+||static.ads-twitter.com^
+||sc-static.com^
+||connect.facebook.net^
+||px.ads.linkedin.com^
+!
+! ===== Niveau 3 : Content Recommendations =====
+||outbrain.com^
+||taboola.com^
+||mgid.com^
+||revcontent.com^
+||nativo.com^
+||dianomi.com^
+||zergnet.com^
+||ads.yahoo.com^
+||disqus.com^
+||disquscdn.com^
+||adblade.com^
+||adnnow.com^
+||jubna.com^
+||adpushup.com^
+||shareaholic.com^
+||skimresources.com^
+||media.net^
+||doubleverify.com^
+||viglink.com^
+||crwdcntrl.net^
+||q.quora.com^
+||sumo.com^
+!
+! ===== Niveau 4 : Pop-Up City =====
+||popads.net^
+||adsterra.com^
+||exoclick.com^
+||juicyads.com^
+||popcash.net^
+||mxpnl.com^
+||amplitude.com^
+||rudderstack.com^
+||treasuredata.com^
+||scorecardresearch.com^
+||sb.scorecardresearch.com^
+||cxense.com^
+||piano.io^
+||usefathom.com^
+||simpleanalytics.com^
+||speedcurve.com^
+||scarabresearch.com^
+||ensighten.com^
+!
+! ===== Niveau 5 : Domain Quarantine =====
+||urlhaus.abuse.ch^
+||propellerads.com^
+||adf.ly^
+||emxdigital.com^
+||adjust.com^
+!
+! ===== Niveau 6 : Analytics Ambush =====
+||chartbeat.com^
+||static.chartbeat.com^
+||plausible.io^
+||region1.google-analytics.com^
+||2o7.net^
+||adobedtm.com^
+||omtrdc.net^
+||parsely.com^
+||stats.parsely.com^
+||matomo.cloud^
+||tealium.com^
+||tealiumiq.com^
+||eulerian.net^
+||webtrekk.com^
+||umami.is^
+||statcounter.com^
+||clicky.com^
+||gosquared.com^
+||gaug.es^
+||stats.wp.com^
+||heapanalytics.com^
+||cabinanalytics.com^
+||mc.yandex.ru^
+||hm.baidu.com^
+||logrocket.com^
+||lr-ingest.io^
+||luckyorange.com^
+||inspectlet.com^
+||clarity.ms^
+||hotjar.com^
+||hotjar.io^
+!
+! ===== Niveau 7 : Session Spies =====
+||fullstory.com^
+||fullstorycdn.com^
+||crazyegg.com^
+||smartlook.com^
+||sprig.com^
+||userleap.com^
+||sessionstack.com^
+||contentsquare.net^
+||maze.com^
+||plerdy.com^
+||livesession.io^
+||posthog.com^
+||datadoghq.com^
+||bugsnag.com^
+||sentry.io^
+||ravenjs.com^
+!
+! ===== Niveau 8 : Enterprise Telemetry =====
+||optimizely.com^
+||mparticle.com^
+||kissmetrics.io^
+||woopra.com^
+||indicative.com^
+||keen.io^
+||split.io^
+||walkme.com^
+||chameleon.io^
+||userpilot.com^
+||statsig.com^
+||vwo.com^
+||abtasty.com^
+||convert.com^
+||branch.io^
+||clearbit.com^
+||chilipiper.com^
+||wistia.net^
+!
+! ===== Niveau 9 : Data Brokers =====
+||demdex.net^
+||liveramp.com^
+||rlcdn.com^
+||quantserve.com^
+||id5-sync.com^
+||tapad.com^
+||eyeota.net^
+||imrworldwide.com^
+||bombora.com^
+||6sense.com^
+||6sc.co^
+||castle.io^
+||zoominfo.com^
+!
+! ===== Niveau 10 : Cookie Monster (scripts CMP) =====
+||onetrust.com^
+||cookiepro.com^
+||cookiebot.com^
+||didomi.io^
+||cmp.quantcast.com^
+||trustarc.com^
+||cookieyes.com^
+||termly.io^
+||osano.com^
+||iubenda.com^
+||usercentrics.com^
+||consentmanager.net^
+||cookiefirst.com^
+||civicuk.com^
+||getadmiral.com^
+||admiral.com^
+||evidon.com^
+||securiti.ai^
+||sourcepoint.com^
+||realcookiebanner.com^
+||axeptio.com^
+||sirdata.com^
+||klaro.net^
+!
+! ===== Niveau 11 : Social Surveillance =====
+||facebook.com/tr^
+||platform.twitter.com^
+||analytics.twitter.com^
+||ads-twitter.com^
+||snap.licdn.com^
+||vk.com^
+||weibo.com^
+||trk.kakao.com^
+||wcs.naver.com^
+||xing.com^
+||tiktok.com^
+||embed.bsky.app^
+||ct.pinterest.com^
+||youtube.com/api/stats/ads^
+||ok.ru^
+||addtoany.com^
+||sharethis.com^
+||widget.trustpilot.com^
+||vuukle.com^
+!
+! ===== Niveau 12 : Cross-Platform Tracking =====
+||bat.bing.com^
+||analytics.yahoo.com^
+||tongji.baidu.com^
+||top-fwz1.mail.ru^
+||tag.rmp.rakuten.com^
+||impact.com^
+||shareasale.com^
+||tradedoubler.com^
+||traffic.outbrain.com^
+||trc.taboola.com^
+||adsafeprotected.com^
+||rover.ebay.com^
+||track.customer.io^
+!
+! ===== Niveau 13 : Mobile Attribution =====
+||appsflyer.com^
+||kochava.com^
+||unityads.unity3d.com^
+||wzrkt.com^
+||clevertap.com^
+||braze.com^
+||appboy.com^
+||onesignal.com^
+||chartboost.com^
+||data.flurry.com^
+||postscript.io^
+!
+! ===== Niveau 15 : Notification Lockdown =====
+||pushcrew.com^
+||webpushr.com^
+||cleverpush.com^
+||pushowl.com^
+||aimtell.com^
+||pushengage.com^
+||pushwoosh.com^
+||izooto.com^
+||sendpulse.com^
+||subscribers.com^
+!
+! ===== Niveau 16 : Window Warfare =====
+||optinmonster.com^
+||omappapi.com^
+||privy.com^
+||wisepops.com^
+||gravitec.net^
+||app-measurement.com^
+||optimonk.com^
+||justuno.com^
+||popupsmart.com^
+||static.mailerlite.com^
+||ctctcdn.com^
+||hs-scripts.com^
+||hsforms.net^
+!
+! ===== Niveau 17 : Ad Verification Layer =====
+||iasads.com^
+||comscore.com^
+||pixalate.com^
+||humansecurity.com^
+||perimeterx.net^
+||yottaa.com^
+||cdn.yottaa.com^
+!
+! ===== Niveau 18 : OEM Trackers =====
+||metrics.data.hicloud.com^
+||assets.adobedtm.com^
+||steamstatic.com^
+||steamserver.net^
+!
+! ===== Niveau 22 : Script Decoy =====
+||casalemedia.com^
+||bluekai.com^
+||tags.bluekai.com^
+||tag.bombora.com^
+||smartadserver.com^
+||adroll.com^
+!
+! ===== Niveau 25 : First-Party Fortress =====
+||static.cloudflareinsights.com^
+||pi.pardot.com^
+||go.pardot.com^
+||js-agent.newrelic.com^
+||nr-data.net^
+||rollbar.com^
+||loggly.com^
+||munchkin.marketo.com^
+||marketo.net^
+||appdynamics.com^
+||eum.appdynamics.com^
+||raygun.io^
+||trackjs.com^
+!
+! ===== Niveau 26 : Fingerprint Defense =====
+||fpjs.io^
+||fingerprintjs.com^
+||fingerprint.com^
+||datadome.co^
+||js.datadome.co^
+||akamaized.net^
+||h.online-metrix.net^
+||iovation.com^
+||augur.io^
+||imperva.com^
+||incapsula.com^
+||incapdns.net^
+||forter.com^
+||riskified.com^
+||siftscience.com^
+||sift.com^
+!
+! ===== Niveaux non blocables au niveau DNS =====
+! 14 (CSS Cloak), 19 (DOM Surgery), 20 (MutationObserver), 21 (Bait & Switch),
+! 23 (Overlay Assault), 24 (Ad Reinsertion), 27 (Combined Assault), 28 (Final Boss) :
+! ces tests manipulent le DOM de la page et nécessitent un bloqueur navigateur
+! (uBlock Origin, AdGuard extension), pas un blocage DNS.
+!
+! ============================================================
+! PARTIE 2 — SYNTAXE BRAVE BROWSER (shields / listes personnalisées)
+! ============================================================
+! Brave utilise le moteur adblock-rust (compatible uBO/AdGuard).
+! Toutes les règles réseau ci-dessus (||domaine^) fonctionnent telles
+! quelles dans Brave (brave://settings/shields/filters → listes personnalisées).
+! Brave accepte AUSSI les filtres cosmétiques (##sélecteur), ce qui permet
+! de couvrir les niveaux DOM/CSS impossibles à bloquer au niveau DNS.
+!
+! ----- Niveau 14 : CSS Cloak (sélecteurs publicitaires) -----
+aderasr.com##.ad-banner
+aderasr.com##.ad-container
+aderasr.com##.advertisement
+aderasr.com##.adblock
+aderasr.com##.adbanner
+aderasr.com##.adcontainer
+aderasr.com##.advert
+aderasr.com##.ad-placement
+aderasr.com##.ad-feed
+aderasr.com##.adsbygoogle
+aderasr.com##.pubmatic-ad
+aderasr.com##.amazon-adsystem
+aderasr.com##.mgid-widget
+aderasr.com##.rc-widget
+aderasr.com###ad-container
+aderasr.com###ad-banner
+aderasr.com###ad-header
+aderasr.com###ad-footer
+aderasr.com###popup-ad
+aderasr.com###floating-ad
+aderasr.com###adBanner
+aderasr.com##[data-ad-slot]
+aderasr.com##[data-ad-unit]
+aderasr.com##[data-ad-type]
+aderasr.com##[data-ad-size]
+aderasr.com##[data-ad-format]
+aderasr.com##[data-ad-network]
+aderasr.com##[data-ad-id]
+aderasr.com##[data-ad-zone]
+aderasr.com##[data-google-query-id]
+aderasr.com##[data-dfp-ad]
+aderasr.com##[data-ad-manager]
+aderasr.com##[data-ad-placement]
+aderasr.com##[data-ad-provider]
+aderasr.com##[data-ad-source]
+aderasr.com##.sponsored
+aderasr.com##.sponsored-content
+aderasr.com##.promoted
+aderasr.com##.partner-content
+aderasr.com##.paid-content
+aderasr.com##.content-recommendation
+aderasr.com##.branded-content
+aderasr.com##.promo-banner
+aderasr.com##.promo-widget
+aderasr.com##.newsletter-popup
+aderasr.com##.subscription-modal
+aderasr.com##.notification-prompt
+aderasr.com##.app-download-banner
+aderasr.com##.cookie-notice
+aderasr.com##.gdpr-banner
+aderasr.com##.consent-bar
+aderasr.com##.anti-adblock-overlay
+aderasr.com##.adblock-wall
+aderasr.com##.sticky-banner
+aderasr.com##.exit-intent-popup
+aderasr.com##.adsbox
+aderasr.com##.ad-skin
+aderasr.com##.ad-wallpaper
+aderasr.com##.ad-expandable
+aderasr.com##.text-ad
+aderasr.com##.video-ad-overlay
+aderasr.com##.preroll-ad
+aderasr.com##.midroll-ad
+aderasr.com##.postroll-ad
+aderasr.com##.product-listing-ad
+aderasr.com##.shopping-ad
+aderasr.com##.affiliate-banner
+aderasr.com##.adfox-banner
+aderasr.com##.fb-like
+aderasr.com##.social-bar
+aderasr.com##.social-icons-bar
+aderasr.com##.email-signup-overlay
+aderasr.com##.discount-popup
+aderasr.com##.welcome-mat
+aderasr.com##.subscribe-box
+aderasr.com##.ad-label
+aderasr.com##.ad-tag
+aderasr.com##.ad-disclosure
+aderasr.com##.ad-bottom-banner
+!
+! ----- Niveau 21 : Bait & Switch (murs anti-adblock) -----
+aderasr.com##.anti-adblock-modal
+aderasr.com##.anti-adblock-wall
+aderasr.com##.anti-adblock-banner
+!
+! ----- Niveau 23 : Overlay Assault -----
+aderasr.com##.welcome-mat-overlay
+aderasr.com##.modal-dialog
+aderasr.com##.email-capture-overlay
+aderasr.com##.exit-intent-popup
+aderasr.com##.notification-prompt-overlay
+aderasr.com##.floating-corner-ad
+aderasr.com##.expanding-ad-banner
+aderasr.com##.promotional-overlay
+aderasr.com##.share-overlay
+aderasr.com##.app-download-banner-overlay
+aderasr.com##.exit-overlay
+!
+! ----- Niveau 10 : Cookie Monster (bannières CMP cosmétiques) -----
+aderasr.com##.cookie-banner
+aderasr.com##.cookie-consent
+aderasr.com##.cookie-popup
+aderasr.com##.consent-wall
+aderasr.com##.cookie-wall
+aderasr.com##.gdpr-consent
+aderasr.com##.cc-banner
+aderasr.com##.cc-window
+aderasr.com##.cky-consent
+aderasr.com##.iubenda-cs-banner
+aderasr.com##.onetrust-banner-sdk
+aderasr.com###onetrust-consent-sdk
+aderasr.com##.usercentrics-banner
+aderasr.com###usercentrics-banner
+aderasr.com##.didomi-popup
+aderasr.com###didomi-popup
+aderasr.com##.cmp-banner
+aderasr.com##.axeptio-banner
+!
+! REMARQUES BRAVE :
+! - Les règles réseau ||domaine^ ci-dessus sont directement compatibles Brave.
+! - Brave ne propose pas d'option auto "reject consent" native dans une liste
+!   personnalisée ; le blocage des scripts CMP (partie 1, niveau 10) empêche
+!   l'affichage de la plupart des bannières.
+! - Les niveaux 20/24/27/28 (injection JS via MutationObserver, rAF, microtasks)
+!   ne sont couverts par AUCUNE liste de filtres : Brave les échouera aussi.
+!   C'est une limite technique du filtrage déclaratif.
+!
+! ============================================================
+! PARTIE 3 — RÉSULTATS COMPLETS PASS/FAIL (760 tests)
+! Source : AdErasr Full Report du 2 oct. 2026 01:02 — Sapphire Shield, 85 %
+! (648/760) · Ads 274/290 (94%) · Privacy 194/199 (97%)
+! Annoyances 82/159 (52%) · Advanced 98/112 (88%) · Niveau max atteint : 28
+! ============================================================
+!
+! ----- Niveau 1 : First Contact — FAIL 12/17 (71%) -----
+! FAIL  1. Google AdSense
+! FAIL  2. DoubleClick Ad Server
+! PASS  3. Google Ad Services
+! FAIL  4. Google Publisher Tag
+! PASS  5. Google Funding Choices
+! PASS  6. Google Ads Conversion
+! PASS  7. Google Ad Service
+! PASS  8. DoubleClick Pixel
+! PASS  9. Google IMA Loader
+! FAIL 10. Google Analytics
+! PASS 11. Google Remarketing
+! PASS 12. AdSense Search
+! PASS 13. Google CSE Ads
+! FAIL 14. Google SafeFrame
+! PASS 15. Campaign Manager 360
+! PASS 16. Google Floodlight
+! PASS 17. GA4 gtag.js
+!
+! ----- Niveau 2 : Ad Network Gauntlet — PASS 40/40 (100%) -----
+! PASS 1. AppNexus/Xandr — 2. Amazon Ads — 3. OpenX — 4. PubMatic — 5. Criteo
+! PASS 6. Index Exchange — 7. Magnite/Rubicon — 8. Sovrn — 9. TripleLift
+! PASS 10. Sharethrough — 11. The Trade Desk — 12. GumGum — 13. Teads
+! PASS 14. Yieldmo — 15. Prebid.js — 16. MediaVine — 17. Ezoic
+! PASS 18. AdFalcon/ArabyAds — 19. Mintegral — 20. RTB House — 21. Verizon Media
+! PASS 22. Sonobi — 23. Kargo — 24. Undertone — 25. Infolinks — 26. Choozle
+! PASS 27. BidSwitch — 28. Carbon Ads — 29. BuySellAds — 30. AdThrive/Raptive
+! PASS 31. Freestar — 32. Snapchat Pixel — 33. TikTok Pixel Events
+! PASS 34. Reddit Pixel — 35. X Origin Conversion Tag — 36. X Telemetry (jot)
+! PASS 37. Meta Tracking Pixel — 38. Snapchat Tracking — 39. X Ad Tracking (t.co)
+! PASS 40. LinkedIn Ad Tracking
+!
+! ----- Niveau 3 : Content Recommendations — FAIL 22/24 (92%) -----
+! FAIL  1. Outbrain
+! PASS  2. Taboola — 3. MGID — 4. RevContent — 5. Nativo — 6. Dianomi
+! PASS  7. ZergNet — 8. Yahoo Gemini — 9. Disqus Tracking — 10. Adblade
+! PASS 11. AdNow — 12. Jubna — 13. AdPushup — 14. Shareaholic — 15. Skimlinks
+! FAIL 16. Amazon Publisher Services
+! PASS 17. Media.net — 18. GumGum — 19. DoubleVerify Tag — 20. VigLink/Sovrn
+! PASS 21. Carbon Ads — 22. Lotame DMP — 23. Quora Pixel — 24. Sumo/SumoMe
+!
+! ----- Niveau 4 : Pop-Up City — FAIL 15/17 (88%) -----
+! PASS 1. PopAds — 2. Adsterra — 3. ExoClick — 4. JuicyAds — 5. PopCash
+! PASS 6. Mixpanel CDN — 7. Amplitude — 8. RudderStack — 9. Treasure Data
+! FAIL 10. Scorecard Research
+! PASS 11. Cxense (Piano) — 12. Fathom Analytics — 13. Simple Analytics
+! PASS 14. SpeedCurve LUX — 15. Emarsys (Scarab)
+! FAIL 16. Vercel Speed Insights
+! PASS 17. Ensighten Tag Manager
+!
+! ----- Niveau 5 : Domain Quarantine — PASS 5/5 (100%) -----
+! PASS 1. URLhaus Malware — 2. PropellerAds — 3. Adf.ly Redirect
+! PASS 4. Bidswitch/EMX — 5. Adjust SDK
+!
+! ----- Niveau 6 : Analytics Ambush — FAIL 30/32 (94%) -----
+! FAIL  1. Chartbeat
+! PASS  2. Plausible Analytics — 3. GA4 Collect — 4. Google Tag Services
+! PASS  5. SSL GA Pixel
+! FAIL  6. Adobe Analytics
+! PASS  7. Chartbeat (2e test) — 8. Parse.ly — 9. Piano Analytics — 10. Plausible
+! PASS 11. Fathom Analytics — 12. Matomo/Piwik — 13. Tealium
+! PASS 14. Eulerian (CNAME) — 15. Webtrekk (CNAME) — 16. Umami Analytics
+! PASS 17. Statcounter — 18. Clicky Analytics — 19. GoSquared — 20. Gauges
+! PASS 21. Simple Analytics — 22. WordPress Stats — 23. Heap (alt CDN)
+! PASS 24. Cabin Analytics — 25. Yandex Metrica Pixel — 26. Baidu Tongji
+! PASS 27. LogRocket — 28. LogRocket CDN — 29. Lucky Orange — 30. Inspectlet
+! PASS 31. Microsoft Clarity — 32. Hotjar Surveys
+!
+! ----- Niveau 7 : Session Spies — PASS 21/21 (100%) -----
+! PASS 1. Hotjar — 2. Yandex Webvisor — 3. FullStory — 4. Lucky Orange
+! PASS 5. CrazyEgg — 6. LogRocket — 7. Smartlook — 8. Sprig — 9. SessionStack
+! PASS 10. Contentsquare — 11. Sprig/UserLeap — 12. Maze — 13. Plerdy
+! PASS 14. LiveSession — 15. PostHog Replay — 16. Datadog RUM Replay
+! PASS 17. rrweb Recording — 18. Bugsnag — 19. Sentry — 20. Sentry Loader
+! PASS 21. Raven.js (Legacy Sentry)
+!
+! ----- Niveau 8 : Enterprise Telemetry — PASS 27/27 (100%) -----
+! PASS 1. Mixpanel — 2. Amplitude — 3. Optimizely — 4. Tealium — 5. PostHog
+! PASS 6. RudderStack — 7. mParticle — 8. Kissmetrics — 9. Woopra — 10. Indicative
+! PASS 11. Census — 12. FullStory Analytics — 13. Keen IO — 14. Split.io
+! PASS 15. WalkMe — 16. Chameleon — 17. Userpilot — 18. Statsig — 19. VWO
+! PASS 20. AB Tasty — 21. Convert.com — 22. Branch.io — 23. Clearbit Reveal
+! PASS 24. Chili Piper — 25. Wistia Video Analytics — 26. Chartbeat Optimization
+! PASS 27. Bizible (Marketo)
+!
+! ----- Niveau 9 : Data Brokers — PASS 15/15 (100%) -----
+! PASS 1. Demdex (Adobe) — 2. LiveRamp — 3. Quantcast — 4. Lotame — 5. ID5
+! PASS 6. Tapad — 7. Eyeota — 8. Nielsen DMP — 9. Bombora — 10. The Trade Desk
+! PASS 11. Sharethrough Identity — 12. 6sense — 13. Criteo ID — 14. Castle.io
+! PASS 15. ZoomInfo WebSights
+!
+! ----- Niveau 10 : Cookie Monster — FAIL 9/73 (12%) -----
+! PASS  1. OneTrust Banner Dismiss
+! FAIL  2. Cookiebot Decline — 3. Didomi Reject — 4. Quantcast Choice Decline
+! FAIL  5. TrustArc Decline — 6. CookieYes Decline — 7. Termly Decline
+! FAIL  8. Osano Decline — 9. iubenda Decline — 10. Usercentrics Decline
+! FAIL 11. Consentmanager Decline — 12. Klaro Decline — 13. Complianz Decline
+! FAIL 14. Moove GDPR Decline — 15. Borlabs Cookie Decline
+! FAIL 16. Cookie Law Info Decline — 17. CookieFirst Decline
+! FAIL 18. Civic Cookie Control Decline — 19. Generic Cookie Banner
+! PASS 20. Generic Cookie Notice
+! FAIL 21. Generic Cookie Bar — 22. Generic Consent Banner
+! PASS 23. Generic Cookie Popup
+! FAIL 24. Generic Cookie Message — 25. Generic GDPR Banner
+! FAIL 26. Generic CCPA Banner — 27. Generic Privacy Banner
+! FAIL 28. EU Cookie Law Banner
+! PASS 29. Delayed Cookie Banner (2s)
+! FAIL 30. Delayed Cookie Banner (3s) — 31. Dynamically Injected Consent Modal
+! FAIL 32. Cookie Consent Backdrop — 33. Cookie Top Bar
+! PASS 34. Scroll-Lock Consent Wall
+! FAIL 35. Multi-Layer Consent — 36. LGPD Banner (Brazil)
+! FAIL 37. POPIA Banner (South Africa) — 38. PDPA Banner (Thailand)
+! FAIL 39. Cookie Wall — 40. Age Gate + Cookie Consent
+! FAIL 41. Recurring Cookie Banner — 42. Admiral CMP Decline
+! FAIL 43. Google Funding Choices — 44. Evidon Decline — 45. Securiti Decline
+! FAIL 46. Sourcepoint Decline — 47. OneTrust Preference Center
+! FAIL 48. CookiePro Banner — 49. LiveRamp CMP — 50. WP Cookie Notice
+! FAIL 51. WP GDPR Cookie Compliance — 52. Real Cookie Banner (WP)
+! FAIL 53. Toast-Style Cookie Notice — 54. Snackbar Cookie Notice
+! FAIL 55. Full-Screen Consent Wall — 56. Axeptio Decline — 57. Sirdata CMP Decline
+! FAIL 58. Quantcast TCF2 Banner
+! PASS 59. Accept/Decline Cookie Pair
+! FAIL 60. Floating Cookie Notice — 61. Sidebar Cookie Panel
+! FAIL 62. Banner with Settings Link — 63. Animated Slide-Up Banner
+! FAIL 64. OneTrust Category Banner — 65. DSGVO Banner (German)
+! FAIL 66. RGPD Banner (French) — 67. APPI Banner (Japan) — 68. PIPL Banner (China)
+! FAIL 69. Dark Pattern Consent — 70. Legitimate Interest Banner
+! PASS 71. ConsentManager — 72. Iubenda Consent — 73. CookieConsent.js (Osano)
+!
+! ----- Niveau 11 : Social Surveillance — FAIL 34/35 (97%) -----
+! PASS 1. Facebook Pixel — 2. Facebook Like Button — 3. Meta Pixel Image
+! PASS 4. Twitter/X Pixel — 5. LinkedIn Insight Tag — 6. Facebook Tracking Events
+! PASS 7. LinkedIn Pixel — 8. Twitter Widgets — 9. Quora Pixel
+! PASS 10. Instagram Embed — 11. Threads/Meta — 12. Facebook Impression
+! PASS 13. VK Pixel (Russia) — 14. Weibo Analytics
+! FAIL 15. Kakao Pixel (Korea)
+! PASS 16. Naver Analytics (Korea) — 17. XING Plugin — 18. TikTok Embed
+! PASS 19. TikTok Pixel — 20. Spotify Pixel — 21. Snapchat Pixel
+! PASS 22. X/Twitter Pixel — 23. Nextdoor Pixel — 24. Pinterest Embed
+! PASS 25. LinkedIn Share Widget — 26. YouTube Ad Analytics — 27. OK.ru Pixel
+! PASS 28. Meta Pixel Domain — 29. Reddit Conversion — 30. Mastodon Embed
+! PASS 31. Bluesky Embed — 32. AddToAny Share — 33. ShareThis
+! PASS 34. Trustpilot Widget — 35. Vuukle Comments
+!
+! ----- Niveau 12 : Cross-Platform Tracking — PASS 24/24 (100%) -----
+! PASS 1. TikTok Pixel — 2. Pinterest Tag — 3. Reddit Pixel — 4. Snapchat Pixel
+! PASS 5. YouTube Ads — 6. Bing UET Tag — 7. Yahoo DOT Tag — 8. TikTok Analytics
+! PASS 9. X Conversion API — 10. Baidu Analytics — 11. Yandex Metrica
+! PASS 12. Mail.ru Target — 13. Rakuten Ads — 14. CJ Affiliate — 15. eBay Pixel
+! PASS 16. Microsoft Ads — 17. Impact Radius — 18. ShareASale — 19. TradeDoubler
+! PASS 20. Outbrain Pixel — 21. Taboola Pixel — 22. AdSafe/IAS Pixel
+! PASS 23. Wayfair/WDFL Analytics — 24. Customer.io Tracking
+!
+! ----- Niveau 13 : Mobile Attribution — PASS 11/11 (100%) -----
+! PASS 1. Adjust — 2. AppsFlyer — 3. Branch.io — 4. Kochava — 5. Unity Ads
+! PASS 6. CleverTap — 7. Braze — 8. OneSignal — 9. Chartboost
+! PASS 10. Flurry Analytics — 11. Postscript SMS
+!
+! ----- Niveau 14 : CSS Cloak — FAIL 203/213 (95%) -----
+! PASS 1-102 : tous les sélecteurs .ad-* , .adsbygoogle, .gpt-ad, .dfp-ad,
+! .google-ad(s), .taboola, .trc_rbox, .OUTBRAIN, .outbrain-widget, .criteo-ad,
+! .pubmatic-ad, .amazon-adsystem, .mgid-widget, .rc-widget, .zergnet-widget,
+! .ntv-ad, .adblade, .dianomi-ad, #ad-container, #ad-banner, #ad-slot,
+! #ad-wrapper, #advertisement, #ad-top, #ad-bottom, #ad-sidebar, #ad-header,
+! #ad-footer, #banner-ad, #leaderboard-ad, #sidebar-ad, #top-ad, #right-ad,
+! #left-ad, #middle-ad, #in-article-ad, #popup-ad, #floating-ad, #adContainer,
+! #adBanner, #adWrapper, #google_ads_frame, #div-gpt-ad, [data-ad-slot],
+! [data-ad-unit], [data-ad-type], [data-ad-position], [data-ad-size],
+! [data-ad-format], [data-ad], [data-ad-network], [data-ad-id], [data-ad-zone],
+! [data-google-query-id], [data-dfp-ad], [data-adunit], [data-ad-manager],
+! [data-ad-placement], [data-adzone], [data-ad-provider], [data-ad-source],
+! [aria-label='advertisement']
+! FAIL 103. [aria-label='ad'] Hidden
+! FAIL 104. [aria-label='sponsored'] Hidden
+! PASS 105-134 : .sponsored, .sponsored-content, .sponsored-post, .promoted,
+! .promoted-content, .partner-content, .paid-content, .native-ad,
+! .content-recommendation, .branded-content, .advertorial, .promo-banner,
+! .promo-widget, .newsletter-popup, .subscription-modal, .notification-prompt,
+! .app-download-banner, .social-share-overlay, .cookie-notice, .gdpr-banner,
+! .consent-bar, .anti-adblock-overlay, .adblock-wall, .sticky-banner,
+! .exit-intent-popup, 728x90, 300x250, 160x600, 300x600, 970x250
+! FAIL 135. 320x50 Mobile Leaderboard Hidden
+! PASS 136. 320x100 Large Mobile Banner
+! FAIL 137. 970x90 Super Leaderboard Hidden
+! FAIL 138. 468x60 Full Banner Hidden
+! PASS 139. 250x250 Square — 140. 120x600 Skyscraper
+! FAIL 141. 336x280 Large Rectangle Hidden
+! PASS 142-166 : .ad-banner.top, .banner-ad-wrapper, .ad-wrapper>.ad-inner,
+! iframe .ad-iframe, iframe #google_ads_iframe, ins.adsbygoogle,
+! ins.adfox-banner, .fb-like, .fb-share-button, .twitter-share-button,
+! .social-widget, .share-bar, .social-bar, .follow-widget, .social-icons-bar,
+! .video-ad, .video-ad-overlay, .preroll-ad, .midroll-ad, .postroll-ad,
+! .companion-ad, .product-listing-ad, .shopping-ad, .affiliate-link,
+! .affiliate-banner
+! FAIL 167. .promo-carousel Hidden
+! PASS 168-184 : .ad-break, .ad-label, .ad-tag, .ad-disclosure, .ad-module,
+! .ad-card, .ad-stack, .ad-rail, .adzone, .adsbox, .email-signup-overlay,
+! .newsletter-popup, .subscription-modal, .discount-popup, .welcome-mat,
+! .subscribe-box, #adBox
+! FAIL 185. #adSlot Hidden
+! PASS 186. #adUnit — 187. #ad-panel
+! FAIL 188. #ad-zone Hidden
+! FAIL 189. #ad-area Hidden
+! PASS 190-213 : #ad-content, #ad-space, #adFrame, #adLeaderboard, .ad-overlay,
+! .ad-row, .ad-column, .ad-item, .ad-content, .ad-display, .ad-skin,
+! .ad-takeover, .ad-roadblock, .ad-wallpaper, .ad-pushdown, .ad-expandable,
+! .textad, .text-ad, .ad-text-link, .ad-popup, .ad-float, .ad-fixed,
+! .ad-top-banner, .ad-bottom-banner
+!
+! ----- Niveau 15 : Notification Lockdown — FAIL 8/15 (53%) -----
+! FAIL  1. Push Notification Widget Hidden
+! FAIL  2. OneSignal Prompt Hidden
+! FAIL  3. PushCrew/VWO Engage Prompt Hidden
+! FAIL  4. Webpushr Prompt Hidden
+! FAIL  5. CleverPush Prompt Hidden
+! FAIL  6. PushOwl Prompt Hidden
+! PASS  7. Aimtell Push SDK Blocked
+! FAIL  8. Notification Bell Widget Hidden
+! PASS  9. OneSignal — 10. PushEngage — 11. Pushwoosh — 12. iZooto
+! PASS 13. SendPulse Push — 14. Subscribers.com — 15. WebPushr
+!
+! ----- Niveau 16 : Window Warfare — FAIL 10/13 (77%) -----
+! PASS  1. OptinMonster Popup SDK Blocked — 2. Privy Popup Widget Blocked
+! PASS  3. Wisepops Popup SDK Blocked — 4. Ad Anchor Element Hidden
+! FAIL  5. Gravitec Prompt Hidden
+! FAIL  6. Firebase Push Prompt Hidden
+! FAIL  7. OptiMonk Popup Hidden
+! PASS  8. Justuno — 9. Popup Smart — 10. Sumo Growth Tools
+! PASS 11. MailerLite Popups — 12. Constant Contact Forms — 13. HubSpot CTA
+!
+! ----- Niveau 17 : Ad Verification Layer — PASS 11/11 (100%) -----
+! PASS 1. DoubleVerify — 2. IAS — 3. ComScore — 4. ComScore Beacon
+! PASS 5. Nielsen Pixel — 6. HUMAN Security — 7. Pixalate
+! PASS 8. DoubleVerify Pixel — 9. IAS Pixel — 10. Integral Ad Science Quality
+! PASS 11. Yottaa
+!
+! ----- Niveau 18 : OEM Trackers — FAIL 8/9 (89%) -----
+! PASS 1. Apple Telemetry — 2. Huawei Analytics — 3. Adobe Activation
+! PASS 4. TikTok Telemetry — 5. Snap Telemetry — 6. Sony PlayStation
+! FAIL 7. Steam/Valve
+! PASS 8. LinkedIn Telemetry — 9. Chinese CDN Tracker
+!
+! ----- Niveau 19 : DOM Surgery — FAIL 22/28 (79%) -----
+! PASS  1. Dynamic Ad Iframe Removed
+! FAIL  2. Ad Script Tag Blocked
+! FAIL  3. Tracking Pixel Removed
+! PASS  4. Ad Link Sanitized — 5. Ad Banner Div Removed — 6. Ad Container Div Removed
+! PASS  7. Ad Slot Div Removed — 8. Ad Wrapper Div Removed — 9. Sponsored Div Removed
+! PASS 10. Advertisement Div Removed — 11. Ad Unit Div Removed
+! PASS 12. Ad Panel Div Removed — 13. AdSense Ins Removed — 14. Taboola Widget Removed
+! PASS 15. Outbrain Widget Removed
+! FAIL 16. Google Ads Iframe Removed
+! FAIL 17. DFP Iframe Removed
+! PASS 18. Ad Frame Iframe Removed — 19. [data-ad] Element Removed
+! PASS 20. [data-google-query-id] Removed — 21. Nested Ad Wrapper Removed
+! PASS 22. In-Article Ad Removed — 23. Facebook Like Widget Removed
+! PASS 24. Twitter Widget Removed — 25. Social Widget Removed
+! FAIL 26. Hidden Tracking Iframe Removed
+! FAIL 27. innerHTML Tracking Pixel Removed
+! PASS 28. Batch Ad Cleanup (10 elements)
+!
+! ----- Niveau 20 : MutationObserver Arms Race — PASS 19/19 (100%) -----
+! PASS 1-19 : Delayed Injection (500ms/1s/2s/3s), Delayed Ad Slot (1.5s),
+! Delayed Container (2.5s), Rapid-Fire (5x200ms, 10x100ms, 20x50ms),
+! Nested Injection, Deep Nested (5 levels), DocumentFragment Injection,
+! Fragment Batch (5 ads), rAF Continuous Loop, insertAdjacentHTML Injection,
+! Template Clone Injection, Class/ID Mutation Detection, Staggered Mixed Types
+!
+! ----- Niveau 21 : Bait & Switch — FAIL 4/5 (80%) -----
+! PASS 1. Bait Element Detection Evaded — 2. adsBox Bait Not Self-Blocked
+! PASS 3. Anti-Adblock Modal Hidden — 4. Anti-Adblock Wall Hidden
+! FAIL 5. Anti-Adblock Banner Hidden
+!
+! ----- Niveau 22 : Script Decoy — FAIL 30/37 (81%) -----
+! PASS  1. Ads.yahoo.com Script Blocked
+! FAIL  2. Scorecard Research Blocked
+! PASS  3. Quantcast Script Blocked — 4. ShareThrough Blocked
+! PASS  5. Index Exchange Blocked — 6. Sovrn Script Blocked
+! PASS  7. PubMatic Script Blocked — 8. LiveRamp Script Blocked
+! PASS  9. Casale/Index Blocked — 10. Lotame DMP Blocked — 11. BlueKai DMP Blocked
+! FAIL 12. Chartbeat Blocked
+! PASS 13. Bombora Script Blocked — 14. MediaNet Blocked — 15. Teads Script Blocked
+! FAIL 16. External googletag Handled
+! FAIL 17. External Amazon AAX Handled
+! PASS 18. External Criteo Script Handled
+! FAIL 19. Async Ad Script Blocked
+! PASS 20. Deferred Ad Script Blocked — 21. Sonobi Script Blocked
+! PASS 22. Undertone Script Blocked — 23. Nativo Script Blocked
+! PASS 24. Kargo Script Blocked — 25. GumGum Script Blocked
+! PASS 26. Smart AdServer Blocked — 27. Yieldmo Script Blocked
+! PASS 28. TripleLift Script Blocked
+! FAIL 29. External Outbrain Blocked
+! PASS 30. External Taboola Blocked — 31. Video Ad Element Removed
+! PASS 32. Sticky Ad Removed — 33. Floating Ad Removed — 34. Interstitial Ad Removed
+! PASS 35. Native Ad Removed
+! FAIL 36. VAST Fetch Blocked
+! PASS 37. AdRoll Script Blocked
+!
+! ----- Niveau 23 : Overlay Assault — FAIL 16/17 (94%) -----
+! PASS  1. Fixed Overlay Hidden — 2. Interstitial Ad Hidden — 3. Welcome Mat Hidden
+! PASS  4. Modal Dialog Handled — 5. Email Capture Overlay Hidden
+! PASS  6. Exit Intent Popup Hidden — 7. Notification Prompt Hidden
+! PASS  8. Sticky Footer Ad — 9. Floating Side Ad — 10. Sticky Top Bar Ad
+! PASS 11. Floating Corner Ad
+! FAIL 12. Expanding Ad Banner
+! PASS 13. Promotional Overlay Hidden — 14. Share Overlay Hidden
+! PASS 15. App Download Banner Hidden — 16. Exit Overlay Hidden
+! PASS 17. Multiple Overlays Simultaneously
+!
+! ----- Niveau 24 : Ad Reinsertion — PASS 10/10 (100%) -----
+! PASS 1-10 : Element Re-Creation (3x/5x), innerHTML Re-Injection (2x),
+! insertAdjacentHTML Reinsertion, rAF Continuous Insertion (30 frames),
+! Fragment Batch Reinsertion, Class Swap Reinsertion, Template Clone
+! Reinsertion, Microtask Insertion, Promise.resolve Insertion
+!
+! ----- Niveau 25 : First-Party Fortress — PASS 15/15 (100%) -----
+! PASS 1. Cloudflare Insights — 2. Pardot (Salesforce) — 3. Sentry
+! PASS 4. New Relic — 5. Bugsnag — 6. Datadog RUM — 7. Rollbar — 8. Loggly
+! PASS 9. Marketo Munchkin — 10. Mixpanel CDN — 11. Dynatrace — 12. AppDynamics
+! PASS 13. Elastic RUM — 14. Raygun — 15. TrackJS
+!
+! ----- Niveau 26 : Fingerprint Defense — PASS 14/14 (100%) -----
+! PASS 1. FingerprintJS — 2. DataDome — 3. PerimeterX/HUMAN
+! PASS 4. Akamai Bot Manager — 5. ThreatMetrix (LexisNexis)
+! PASS 6. Iovation (TransUnion) — 7. Augur.io — 8. Imperva/Incapsula
+! PASS 9. DataDome JS — 10. Forter — 11. Riskified — 12. Sift Science
+! PASS 13. Castle.io — 14. FingerprintJS OSS
+!
+! ----- Niveau 27 : Combined Assault — PASS 4/4 (100%) -----
+! PASS 1. 10 Ad Classes via rAF — 2. 20 Ad Classes Rapid
+! PASS 3. 30 Elements in 3 Seconds — 4. Cookie Banner + Ad Combo
+!
+! ----- Niveau 28 : Final Boss — PASS 9/9 (100%) -----
+! PASS 1. Full Sweep Under Pressure — 2. 50-Element Burst
+! PASS 3. Progressive Assault (5 waves) — 4. Endurance Test
+! PASS 5. Rapid-Fire All Types — 6. Fragment + rAF Combined
+! PASS 7. Microtask/Macrotask Race — 8. IntersectionObserver Ad Load
+! PASS 9. Dynamic Import Ad Script
+!
+! ============================================================
+! ÉCHECS RÉSIDUELS (13 niveaux en FAIL) — causes principales :
+! - Niveau 1 (12/17) : AdSense/DoubleClick/GPT chargés en first-party Google
+!   (||googlesyndication.com^ etc. déjà présents dans la Partie 1)
+! - Niveau 10 (9/73) : bannières CMP injectées par la page elle-même,
+!   non blocables par liste DNS ; cf. filtres cosmétiques Partie 2
+! - Niveau 14 (203/213) : 10 sélecteurs manquants — ajouter dans Brave :
+!   aderasr.com##[aria-label='ad']
+!   aderasr.com##[aria-label='sponsored']
+!   aderasr.com##.ad-slot-320x50
+!   aderasr.com##.ad-slot-970x90
+!   aderasr.com##.ad-slot-468x60
+!   aderasr.com##.ad-slot-336x280
+!   aderasr.com##.promo-carousel
+!   aderasr.com###adSlot
+!   aderasr.com###ad-zone
+!   aderasr.com###ad-area
+! - Niveau 15 (8/15) & 16 (10/13) : widgets de prompt push injectés en local
+! - Niveau 18 (8/9) : Steam/Valve (déjà dans Partie 1 : ||steamstatic.com^,
+!   ||steamserver.net^)
+! - Niveau 19 (22/28) & 22 (30/37) : manipulations DOM/scripts async
+! - Niveau 21 (4/5) : ajouter aderasr.com##.anti-adblock-banner
+! - Niveau 23 (16/17) : ajouter aderasr.com##.expanding-ad-banner
+! ============================================================
