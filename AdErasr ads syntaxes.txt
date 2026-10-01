@@ -1,0 +1,501 @@
+! Titre : AdErasr Test Domains — AdGuard Home
+! Source : AdErasr Ad Blocker Stress Test — Rapport complet (2 oct. 2026, 760 tests, 28 niveaux)
+! Format : syntaxe AdGuard Home (||domaine^)
+! Remarque : les niveaux 14, 19, 20, 21, 23, 24, 27 et 28 sont des tests
+! DOM/cosmétiques (CSS, MutationObserver, overlays) : non blocables au niveau DNS.
+! Seuls les niveaux chargeant de vrais domaines sont listés ci-dessous.
+!
+! ===== Niveau 1 : First Contact (Google Ads) =====
+||doubleclick.net^
+||googleadservices.com^
+||googlesyndication.com^
+||googletagservices.com^
+||googleads.g.doubleclick.net^
+||adservice.google.com^
+||pagead2.googlesyndication.com^
+||fundingchoicesmessages.com^
+||google-analytics.com^
+||googletagmanager.com^
+||adsense.com^
+||admanager.google.com^
+!
+! ===== Niveau 2 : Ad Network Gauntlet =====
+||adnxs.com^
+||adnxs-simple.com^
+||amazon-adsystem.com^
+||aax.amazon-adsystem.com^
+||openx.net^
+||pubmatic.com^
+||criteo.com^
+||criteo.net^
+||indexexchange.com^
+||indexww.com^
+||rubiconproject.com^
+||sovrn.com^
+||3lift.com^
+||sharethrough.com^
+||adsrvr.org^
+||gumgum.com^
+||teads.tv^
+||yieldmo.com^
+||prebid.org^
+||mediavine.com^
+||ezoic.com^
+||ezodn.com^
+||arabyads.com^
+||mintegral.com^
+||rtbhouse.com^
+||sonobi.com^
+||kargo.com^
+||undertone.com^
+||infolinks.com^
+||choozle.com^
+||bidswitch.net^
+||carbonads.com^
+||buysellads.com^
+||raptive.com^
+||freestar.com^
+||analytics.tiktok.com^
+||ads.tiktok.com^
+||alb.reddit.com^
+||static.ads-twitter.com^
+||sc-static.com^
+||connect.facebook.net^
+||px.ads.linkedin.com^
+!
+! ===== Niveau 3 : Content Recommendations =====
+||outbrain.com^
+||taboola.com^
+||mgid.com^
+||revcontent.com^
+||nativo.com^
+||dianomi.com^
+||zergnet.com^
+||ads.yahoo.com^
+||disqus.com^
+||disquscdn.com^
+||adblade.com^
+||adnnow.com^
+||jubna.com^
+||adpushup.com^
+||shareaholic.com^
+||skimresources.com^
+||media.net^
+||doubleverify.com^
+||viglink.com^
+||crwdcntrl.net^
+||q.quora.com^
+||sumo.com^
+!
+! ===== Niveau 4 : Pop-Up City =====
+||popads.net^
+||adsterra.com^
+||exoclick.com^
+||juicyads.com^
+||popcash.net^
+||mxpnl.com^
+||amplitude.com^
+||rudderstack.com^
+||treasuredata.com^
+||scorecardresearch.com^
+||sb.scorecardresearch.com^
+||cxense.com^
+||piano.io^
+||usefathom.com^
+||simpleanalytics.com^
+||speedcurve.com^
+||scarabresearch.com^
+||ensighten.com^
+!
+! ===== Niveau 5 : Domain Quarantine =====
+||urlhaus.abuse.ch^
+||propellerads.com^
+||adf.ly^
+||emxdigital.com^
+||adjust.com^
+!
+! ===== Niveau 6 : Analytics Ambush =====
+||chartbeat.com^
+||static.chartbeat.com^
+||plausible.io^
+||region1.google-analytics.com^
+||2o7.net^
+||adobedtm.com^
+||omtrdc.net^
+||parsely.com^
+||stats.parsely.com^
+||matomo.cloud^
+||tealium.com^
+||tealiumiq.com^
+||eulerian.net^
+||webtrekk.com^
+||umami.is^
+||statcounter.com^
+||clicky.com^
+||gosquared.com^
+||gaug.es^
+||stats.wp.com^
+||heapanalytics.com^
+||cabinanalytics.com^
+||mc.yandex.ru^
+||hm.baidu.com^
+||logrocket.com^
+||lr-ingest.io^
+||luckyorange.com^
+||inspectlet.com^
+||clarity.ms^
+||hotjar.com^
+||hotjar.io^
+!
+! ===== Niveau 7 : Session Spies =====
+||fullstory.com^
+||fullstorycdn.com^
+||crazyegg.com^
+||smartlook.com^
+||sprig.com^
+||userleap.com^
+||sessionstack.com^
+||contentsquare.net^
+||maze.com^
+||plerdy.com^
+||livesession.io^
+||posthog.com^
+||datadoghq.com^
+||bugsnag.com^
+||sentry.io^
+||ravenjs.com^
+!
+! ===== Niveau 8 : Enterprise Telemetry =====
+||optimizely.com^
+||mparticle.com^
+||kissmetrics.io^
+||woopra.com^
+||indicative.com^
+||keen.io^
+||split.io^
+||walkme.com^
+||chameleon.io^
+||userpilot.com^
+||statsig.com^
+||vwo.com^
+||abtasty.com^
+||convert.com^
+||branch.io^
+||clearbit.com^
+||chilipiper.com^
+||wistia.net^
+!
+! ===== Niveau 9 : Data Brokers =====
+||demdex.net^
+||liveramp.com^
+||rlcdn.com^
+||quantserve.com^
+||id5-sync.com^
+||tapad.com^
+||eyeota.net^
+||imrworldwide.com^
+||bombora.com^
+||6sense.com^
+||6sc.co^
+||castle.io^
+||zoominfo.com^
+!
+! ===== Niveau 10 : Cookie Monster (scripts CMP) =====
+||onetrust.com^
+||cookiepro.com^
+||cookiebot.com^
+||didomi.io^
+||cmp.quantcast.com^
+||trustarc.com^
+||cookieyes.com^
+||termly.io^
+||osano.com^
+||iubenda.com^
+||usercentrics.com^
+||consentmanager.net^
+||cookiefirst.com^
+||civicuk.com^
+||getadmiral.com^
+||admiral.com^
+||evidon.com^
+||securiti.ai^
+||sourcepoint.com^
+||realcookiebanner.com^
+||axeptio.com^
+||sirdata.com^
+||klaro.net^
+!
+! ===== Niveau 11 : Social Surveillance =====
+||facebook.com/tr^
+||platform.twitter.com^
+||analytics.twitter.com^
+||ads-twitter.com^
+||snap.licdn.com^
+||vk.com^
+||weibo.com^
+||trk.kakao.com^
+||wcs.naver.com^
+||xing.com^
+||tiktok.com^
+||embed.bsky.app^
+||ct.pinterest.com^
+||youtube.com/api/stats/ads^
+||ok.ru^
+||addtoany.com^
+||sharethis.com^
+||widget.trustpilot.com^
+||vuukle.com^
+!
+! ===== Niveau 12 : Cross-Platform Tracking =====
+||bat.bing.com^
+||analytics.yahoo.com^
+||tongji.baidu.com^
+||top-fwz1.mail.ru^
+||tag.rmp.rakuten.com^
+||impact.com^
+||shareasale.com^
+||tradedoubler.com^
+||traffic.outbrain.com^
+||trc.taboola.com^
+||adsafeprotected.com^
+||rover.ebay.com^
+||track.customer.io^
+!
+! ===== Niveau 13 : Mobile Attribution =====
+||appsflyer.com^
+||kochava.com^
+||unityads.unity3d.com^
+||wzrkt.com^
+||clevertap.com^
+||braze.com^
+||appboy.com^
+||onesignal.com^
+||chartboost.com^
+||data.flurry.com^
+||postscript.io^
+!
+! ===== Niveau 15 : Notification Lockdown =====
+||pushcrew.com^
+||webpushr.com^
+||cleverpush.com^
+||pushowl.com^
+||aimtell.com^
+||pushengage.com^
+||pushwoosh.com^
+||izooto.com^
+||sendpulse.com^
+||subscribers.com^
+!
+! ===== Niveau 16 : Window Warfare =====
+||optinmonster.com^
+||omappapi.com^
+||privy.com^
+||wisepops.com^
+||gravitec.net^
+||app-measurement.com^
+||optimonk.com^
+||justuno.com^
+||popupsmart.com^
+||static.mailerlite.com^
+||ctctcdn.com^
+||hs-scripts.com^
+||hsforms.net^
+!
+! ===== Niveau 17 : Ad Verification Layer =====
+||iasads.com^
+||comscore.com^
+||pixalate.com^
+||humansecurity.com^
+||perimeterx.net^
+||yottaa.com^
+||cdn.yottaa.com^
+!
+! ===== Niveau 18 : OEM Trackers =====
+||metrics.data.hicloud.com^
+||assets.adobedtm.com^
+||steamstatic.com^
+||steamserver.net^
+!
+! ===== Niveau 22 : Script Decoy =====
+||casalemedia.com^
+||bluekai.com^
+||tags.bluekai.com^
+||tag.bombora.com^
+||smartadserver.com^
+||adroll.com^
+!
+! ===== Niveau 25 : First-Party Fortress =====
+||static.cloudflareinsights.com^
+||pi.pardot.com^
+||go.pardot.com^
+||js-agent.newrelic.com^
+||nr-data.net^
+||rollbar.com^
+||loggly.com^
+||munchkin.marketo.com^
+||marketo.net^
+||appdynamics.com^
+||eum.appdynamics.com^
+||raygun.io^
+||trackjs.com^
+!
+! ===== Niveau 26 : Fingerprint Defense =====
+||fpjs.io^
+||fingerprintjs.com^
+||fingerprint.com^
+||datadome.co^
+||js.datadome.co^
+||akamaized.net^
+||h.online-metrix.net^
+||iovation.com^
+||augur.io^
+||imperva.com^
+||incapsula.com^
+||incapdns.net^
+||forter.com^
+||riskified.com^
+||siftscience.com^
+||sift.com^
+!
+! ===== Niveaux non blocables au niveau DNS =====
+! 14 (CSS Cloak), 19 (DOM Surgery), 20 (MutationObserver), 21 (Bait & Switch),
+! 23 (Overlay Assault), 24 (Ad Reinsertion), 27 (Combined Assault), 28 (Final Boss) :
+! ces tests manipulent le DOM de la page et nécessitent un bloqueur navigateur
+! (uBlock Origin, AdGuard extension), pas un blocage DNS.
+!
+! ============================================================
+! PARTIE 2 — SYNTAXE BRAVE BROWSER (shields / listes personnalisées)
+! ============================================================
+! Brave utilise le moteur adblock-rust (compatible uBO/AdGuard).
+! Toutes les règles réseau ci-dessus (||domaine^) fonctionnent telles
+! quelles dans Brave (brave://settings/shields/filters → listes personnalisées).
+! Brave accepte AUSSI les filtres cosmétiques (##sélecteur), ce qui permet
+! de couvrir les niveaux DOM/CSS impossibles à bloquer au niveau DNS.
+!
+! ----- Niveau 14 : CSS Cloak (sélecteurs publicitaires) -----
+aderasr.com##.ad-banner
+aderasr.com##.ad-container
+aderasr.com##.advertisement
+aderasr.com##.adblock
+aderasr.com##.adbanner
+aderasr.com##.adcontainer
+aderasr.com##.advert
+aderasr.com##.ad-placement
+aderasr.com##.ad-feed
+aderasr.com##.adsbygoogle
+aderasr.com##.pubmatic-ad
+aderasr.com##.amazon-adsystem
+aderasr.com##.mgid-widget
+aderasr.com##.rc-widget
+aderasr.com###ad-container
+aderasr.com###ad-banner
+aderasr.com###ad-header
+aderasr.com###ad-footer
+aderasr.com###popup-ad
+aderasr.com###floating-ad
+aderasr.com###adBanner
+aderasr.com##[data-ad-slot]
+aderasr.com##[data-ad-unit]
+aderasr.com##[data-ad-type]
+aderasr.com##[data-ad-size]
+aderasr.com##[data-ad-format]
+aderasr.com##[data-ad-network]
+aderasr.com##[data-ad-id]
+aderasr.com##[data-ad-zone]
+aderasr.com##[data-google-query-id]
+aderasr.com##[data-dfp-ad]
+aderasr.com##[data-ad-manager]
+aderasr.com##[data-ad-placement]
+aderasr.com##[data-ad-provider]
+aderasr.com##[data-ad-source]
+aderasr.com##.sponsored
+aderasr.com##.sponsored-content
+aderasr.com##.promoted
+aderasr.com##.partner-content
+aderasr.com##.paid-content
+aderasr.com##.content-recommendation
+aderasr.com##.branded-content
+aderasr.com##.promo-banner
+aderasr.com##.promo-widget
+aderasr.com##.newsletter-popup
+aderasr.com##.subscription-modal
+aderasr.com##.notification-prompt
+aderasr.com##.app-download-banner
+aderasr.com##.cookie-notice
+aderasr.com##.gdpr-banner
+aderasr.com##.consent-bar
+aderasr.com##.anti-adblock-overlay
+aderasr.com##.adblock-wall
+aderasr.com##.sticky-banner
+aderasr.com##.exit-intent-popup
+aderasr.com##.adsbox
+aderasr.com##.ad-skin
+aderasr.com##.ad-wallpaper
+aderasr.com##.ad-expandable
+aderasr.com##.text-ad
+aderasr.com##.video-ad-overlay
+aderasr.com##.preroll-ad
+aderasr.com##.midroll-ad
+aderasr.com##.postroll-ad
+aderasr.com##.product-listing-ad
+aderasr.com##.shopping-ad
+aderasr.com##.affiliate-banner
+aderasr.com##.adfox-banner
+aderasr.com##.fb-like
+aderasr.com##.social-bar
+aderasr.com##.social-icons-bar
+aderasr.com##.email-signup-overlay
+aderasr.com##.discount-popup
+aderasr.com##.welcome-mat
+aderasr.com##.subscribe-box
+aderasr.com##.ad-label
+aderasr.com##.ad-tag
+aderasr.com##.ad-disclosure
+aderasr.com##.ad-bottom-banner
+!
+! ----- Niveau 21 : Bait & Switch (murs anti-adblock) -----
+aderasr.com##.anti-adblock-modal
+aderasr.com##.anti-adblock-wall
+aderasr.com##.anti-adblock-banner
+!
+! ----- Niveau 23 : Overlay Assault -----
+aderasr.com##.welcome-mat-overlay
+aderasr.com##.modal-dialog
+aderasr.com##.email-capture-overlay
+aderasr.com##.exit-intent-popup
+aderasr.com##.notification-prompt-overlay
+aderasr.com##.floating-corner-ad
+aderasr.com##.expanding-ad-banner
+aderasr.com##.promotional-overlay
+aderasr.com##.share-overlay
+aderasr.com##.app-download-banner-overlay
+aderasr.com##.exit-overlay
+!
+! ----- Niveau 10 : Cookie Monster (bannières CMP cosmétiques) -----
+aderasr.com##.cookie-banner
+aderasr.com##.cookie-consent
+aderasr.com##.cookie-popup
+aderasr.com##.consent-wall
+aderasr.com##.cookie-wall
+aderasr.com##.gdpr-consent
+aderasr.com##.cc-banner
+aderasr.com##.cc-window
+aderasr.com##.cky-consent
+aderasr.com##.iubenda-cs-banner
+aderasr.com##.onetrust-banner-sdk
+aderasr.com###onetrust-consent-sdk
+aderasr.com##.usercentrics-banner
+aderasr.com###usercentrics-banner
+aderasr.com##.didomi-popup
+aderasr.com###didomi-popup
+aderasr.com##.cmp-banner
+aderasr.com##.axeptio-banner
+!
+! REMARQUES BRAVE :
+! - Les règles réseau ||domaine^ ci-dessus sont directement compatibles Brave.
+! - Brave ne propose pas d'option auto "reject consent" native dans une liste
+!   personnalisée ; le blocage des scripts CMP (partie 1, niveau 10) empêche
+!   l'affichage de la plupart des bannières.
+! - Les niveaux 20/24/27/28 (injection JS via MutationObserver, rAF, microtasks)
+!   ne sont couverts par AUCUNE liste de filtres : Brave les échouera aussi.
+!   C'est une limite technique du filtrage déclaratif.
